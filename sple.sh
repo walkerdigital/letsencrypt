@@ -52,7 +52,7 @@ if [ -z "$appName" ]
 fi
 
 if [ "$theAction" == "uninstall" ]; then
-	sudo rm "$spSSLDir$appName-ssl.conf" &>/dev/null
+	sudo rm "$spSSLDir$appName.ssl.conf" &>/dev/null
 	sudo service nginx-sp reload
 	echo -e "\e[31mSSL has been removed. If you are seeing errors on your site, then please fix HTACCESS file and remove the rules that you added to force SSL\e[39m"
 elif [ "$theAction" == "install" ]; then
@@ -106,7 +106,7 @@ elif [ "$theAction" == "install" ]; then
     ssl_stapling_verify on;
 	
 	# verify chain of trust of OCSP response
-	sl_trusted_certificate /etc/letsencrypt/live/$domainName/chain.pem;
+	ssl_trusted_certificate /etc/letsencrypt/live/$domainName/chain.pem;
 	
 	#root directory and logfiles
 	root $spAppRoot/public;
@@ -152,7 +152,7 @@ elif [ "$theAction" == "install" ]; then
     ssl_stapling_verify on;
 	
 	# verify chain of trust of OCSP response
-	sl_trusted_certificate /etc/letsencrypt/live/$domainName/chain.pem;
+	ssl_trusted_certificate /etc/letsencrypt/live/$domainName/chain.pem;
 	
 	#root directory and logfiles
 	root $spAppRoot/public;
@@ -208,7 +208,7 @@ elif [ "$theAction" == "install" ]; then
     ssl_stapling_verify on;
 	
 	# verify chain of trust of OCSP response
-	sl_trusted_certificate /etc/letsencrypt/live/$domainName/chain.pem;
+	ssl_trusted_certificate /etc/letsencrypt/live/$domainName/chain.pem;
 	
 	#root directory and logfiles
 	root $spAppRoot/public;
