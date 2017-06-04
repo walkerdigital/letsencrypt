@@ -27,7 +27,7 @@ If git isn't installed on your droplet, install it using this command
 
 and then run this command to clone the repository
 
-`sudo git clone https://github.com/nguyenrom/letsencrypt.git && cd letsencrypt && sudo mv sple.sh /usr/local/bin/keep && sudo chmod +x /usr/local/bin/keep`
+`sudo git clone https://github.com/nguyenrom/LetsEncrypt-Serverpilot.git && cd letsencrypt && sudo mv sple.sh /usr/local/bin/keep && sudo chmod +x /usr/local/bin/keep`
 
 **Note**: *Let's encrypt allow only 5 SSL certificates per domain per week*. If you think you already made this mistake, you've to wait for a week before using this method or use a different domain or subdomain of the domain you're adding SSL for.
 
