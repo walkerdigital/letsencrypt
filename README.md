@@ -15,7 +15,7 @@ About the script:
 
 This script adds Let's encrypt SLL to your WordPress site created using Serverpilot and hosted on server.
 
-ServerPilot offers auto installation of Let's encrypt with upgrade account about $10 per month. This script saves the time and works with free Serverpilot account. It's install SSL + adds a cornjob that renew Let's encrypt SSL
+ServerPilot offers auto installation of Let's encrypt with upgrade account about $10 per month. This script saves the time and works with free Serverpilot account. It's install SSL + adds a cronjob that renew Let's encrypt SSL
 
 <code>Getting started</code>
 
